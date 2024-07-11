@@ -165,8 +165,8 @@ public class Videos extends HttpServlet {
         String[] rgb = color.substring(color.indexOf("(") + 1, color.indexOf(")")).split(",");
 
         int r=new Integer(rgb[0]);
-        int g=new Integer(rgb[0]);
-        int b=new Integer(rgb[0]);
+        int g=new Integer(rgb[1]);
+        int b=new Integer(rgb[2]);
 
 
         return String.format("rgb(%s,%s,%s)", 255 - r, 255 - g, 255-b);

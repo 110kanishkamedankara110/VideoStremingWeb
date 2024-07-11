@@ -9,18 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f55c53ae-893a-4aaf-8257-c79f7600352a" name="Changes" comment="User Registraction and history added">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phoenix/videoStream/endpoints/MessageEndPoint2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phoenix/videoStream/endpoints/MessageEndpoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Socket.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phoenix/videoStream/middleware/IsAuthenticated.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phoenix/videoStream/middleware/IsAuthenticated.java" afterDir="false" />
+    <list default="true" id="f55c53ae-893a-4aaf-8257-c79f7600352a" name="Changes" comment="small ui changes">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/phoenix/videoStream/servlets/Videos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phoenix/videoStream/servlets/Videos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/styleSheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/styleSheets/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -419,7 +409,7 @@
       <workItem from="1720242365483" duration="599000" />
       <workItem from="1720445659433" duration="2217000" />
       <workItem from="1720615194420" duration="1982000" />
-      <workItem from="1720699245275" duration="4039000" />
+      <workItem from="1720699245275" duration="4313000" />
     </task>
     <task id="LOCAL-00001" summary="reduced title text size">
       <created>1690386221786</created>
@@ -592,7 +582,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700496028511</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="small ui changes">
+      <option name="closed" value="true" />
+      <created>1720710901948</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1720710901948</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -632,7 +630,8 @@
     <MESSAGE value="responsive" />
     <MESSAGE value="Made colors dynamic and added more information to json" />
     <MESSAGE value="User Registraction and history added" />
-    <option name="LAST_COMMIT_MESSAGE" value="User Registraction and history added" />
+    <MESSAGE value="small ui changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="small ui changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
