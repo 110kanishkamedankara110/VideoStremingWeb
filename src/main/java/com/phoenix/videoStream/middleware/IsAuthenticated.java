@@ -20,7 +20,7 @@ public class IsAuthenticated implements ContainerRequestFilter {
     HttpServletResponse resp;
 
     @Override
-    public void filter(ContainerRequestContext requestContext) throws IOException {
+    public void filter(ContainerRequestContext  containerRequestFilter) throws IOException {
         User u = (User) req.getSession().getAttribute("user");
         if(u==null){
             resp.sendRedirect("Login.jsp");

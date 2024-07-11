@@ -74,7 +74,7 @@
             </div>
             <div class="more">
                 <div id="cur" class="current">
-                    <img class="img" id="vidimg"/>
+                    <div class="img" id="vidimg" ></div>
                     <span style="padding: 10px;box-sizing: border-box;width: 70%;overflow-y: auto;font-size: smaller;color: white"
                           id="title2"></span>
                 </div>

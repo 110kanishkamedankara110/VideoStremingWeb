@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="VideoStremingWeb:war exploded" />
+      <artifact name="VideoStremingWebApp:war" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,121 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f55c53ae-893a-4aaf-8257-c79f7600352a" name="Changes" comment="User Registraction and history added">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/phoenix/videoStream/endpoints/MessageEndPoint2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/phoenix/videoStream/endpoints/MessageEndpoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Socket.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Game_ss/10-Best-Survival-Games-On-PC-You-Should-Play-Dec-2021.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Game_ss/3961946-best-xbox-360-games.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Game_ss/Blog-Features-min.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Game_ss/best-open-world-games.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Game_ss/e18ed-16427882442356-1920.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Game_ss/ss_5dcb71ffa0a40228f98e1f365d4d6c8b58ca54cf.600x338.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Game_ss/ss_8c4bc1fbddbe83cab34fbf9ebad406355948356e.600x338.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Game_ss/ss_a06937fd929bff05d045252b050da4f6433d5970.600x338.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Game_ss/ss_b9ae1b3f56e458523e62169c8883329eb533107d.600x338.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Game_ss/ss_f65b59bc0928a62f1779af33ffba65fc21cbf886.600x338.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Games/5b3630baae653a57df0c36e6.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Games/61FEIn3sftL._SL1200_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Games/9AcM3vy5t77zPiJyKHwRfnNT.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Games/Apotheon_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Games/MV5BYTljYjM2OGYtNzU5NC00ODBiLTk4Y2ItMmE0ZDUxMzJmYWU4XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_FMjpg_UX1000_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Games/MV5BYzcxMmE2NjItNDc0ZS00NmY3LTk0ZDAtZGJmMDBmMzYyZDczXkEyXkFqcGdeQXVyMzM2MzI5MzU@._V1_FMjpg_UX1000_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Games/Weird-West-Free-Download-By-Steam-repacks.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Games/a3888780581_10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Games/apotheon-release-date-revealed_2gbh.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Games/immortal_fenyx_rising.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Games/immortals-fenyx-rising-button-fin-1603917826191.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Games/life-is-strange-true-colors-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Games/life-is-strange-true-colors_tyhg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Games/niergotylogo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Products/20211018_1102470.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Products/IMG_20190615_214330-2.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Products/gamecontrolers-2048px-00023.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Products/photo-1629429408209-1f912961dbd8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Products/switcholed2-1641412602120.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/colorful_macos_big_sur_apple-wallpaper-1366x768.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/Game_ss/10-Best-Survival-Games-On-PC-You-Should-Play-Dec-2021.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/Game_ss/3961946-best-xbox-360-games.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/Game_ss/Blog-Features-min.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/Game_ss/best-open-world-games.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/Game_ss/e18ed-16427882442356-1920.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/Game_ss/ss_5dcb71ffa0a40228f98e1f365d4d6c8b58ca54cf.600x338.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/Game_ss/ss_8c4bc1fbddbe83cab34fbf9ebad406355948356e.600x338.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/Game_ss/ss_a06937fd929bff05d045252b050da4f6433d5970.600x338.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/Game_ss/ss_b9ae1b3f56e458523e62169c8883329eb533107d.600x338.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/Game_ss/ss_f65b59bc0928a62f1779af33ffba65fc21cbf886.600x338.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/Games/5b3630baae653a57df0c36e6.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/Games/61FEIn3sftL._SL1200_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/Games/9AcM3vy5t77zPiJyKHwRfnNT.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/Games/Apotheon_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/Games/MV5BYTljYjM2OGYtNzU5NC00ODBiLTk4Y2ItMmE0ZDUxMzJmYWU4XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_FMjpg_UX1000_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/Games/MV5BYzcxMmE2NjItNDc0ZS00NmY3LTk0ZDAtZGJmMDBmMzYyZDczXkEyXkFqcGdeQXVyMzM2MzI5MzU@._V1_FMjpg_UX1000_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/Games/Weird-West-Free-Download-By-Steam-repacks.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/Games/a3888780581_10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/Games/apotheon-release-date-revealed_2gbh.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/Games/immortal_fenyx_rising.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/Games/immortals-fenyx-rising-button-fin-1603917826191.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/Games/life-is-strange-true-colors-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/Games/life-is-strange-true-colors_tyhg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/Games/niergotylogo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/Login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/Products/20211018_1102470.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/Products/IMG_20190615_214330-2.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/Products/gamecontrolers-2048px-00023.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/Products/photo-1629429408209-1f912961dbd8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/Products/switcholed2-1641412602120.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/Signin.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/WEB-INF/classes/com/phoenix/videoStream/Annotation/Auth.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/WEB-INF/classes/com/phoenix/videoStream/dto/UserLoginDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/WEB-INF/classes/com/phoenix/videoStream/entities/BaseEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/WEB-INF/classes/com/phoenix/videoStream/entities/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/WEB-INF/classes/com/phoenix/videoStream/entities/UserType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/WEB-INF/classes/com/phoenix/videoStream/listener/ContextListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/WEB-INF/classes/com/phoenix/videoStream/middleware/IsAuthenticated.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/WEB-INF/classes/com/phoenix/videoStream/servlets/Login.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/WEB-INF/classes/com/phoenix/videoStream/util/Hash.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/font/MPLUS1p-Medium.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/font/inv.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/images/Signin.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/images/aqt6u-pxgo7.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/images/arrow-left.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/images/arrow-right.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/images/background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/images/cart.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/images/colorful_macos_big_sur_apple-wallpaper-1366x768.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/images/de6xdn4-124de4e2-01d1-4779-b825-97f722da4927.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/images/k.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/images/loading.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/images/loginIcon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/images/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/images/plus gray.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/images/plus.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/images/profit.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/images/refresh.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/images/suit-heart.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/images/user.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/images/users.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/js/script2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/styleSheets/style_Pages.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VideoWeb/styleSheets/style_admin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/phoenix/videoStream/Annotation/Auth.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/phoenix/videoStream/dto/UserLoginDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/phoenix/videoStream/entities/BaseEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/phoenix/videoStream/entities/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/phoenix/videoStream/entities/UserType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/phoenix/videoStream/listener/ContextListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/phoenix/videoStream/middleware/IsAuthenticated.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/phoenix/videoStream/servlets/Login.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/phoenix/videoStream/util/Hash.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-Test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phoenix/videoStream/middleware/IsAuthenticated.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phoenix/videoStream/middleware/IsAuthenticated.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phoenix/videoStream/servlets/Videos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phoenix/videoStream/servlets/Videos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/styleSheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/styleSheets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,11 +89,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Test.executor": "Run",
+    "Payara Server.Payara 5.2022.2.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/BLACKBOX/IdeaProjects/VideoStremingWeb",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -239,23 +139,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="VideoStremingWebApp" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="VideoStremingWebApp" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Payara 5.2022.2" type="PayaraServerConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="Payara 5.2022.2" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="VideoStremingWeb:war exploded">
+        <artifact name="VideoStremingWebApp:war">
           <settings />
         </artifact>
       </deployment>
@@ -268,6 +155,11 @@
         <option name="CREDENTIAL_ALIAS" />
       </server-settings>
       <predefined_log_file enabled="true" id="GlassFish" />
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="9009" />
       </RunnerSettings>
@@ -320,14 +212,26 @@
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="VideoStremingWeb:war exploded" />
+          <artifact name="VideoStremingWebApp:war" />
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Payara Server.Payara 5.2022.2" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-1.8.0_402-corretto-1.8.0_402-4caba194b151-ae57be32" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -450,7 +354,72 @@
       <workItem from="1699671468588" duration="1306000" />
       <workItem from="1700483796829" duration="773000" />
       <workItem from="1700493839988" duration="2935000" />
-      <workItem from="1700498016823" duration="825000" />
+      <workItem from="1700498016823" duration="1078000" />
+      <workItem from="1700704618538" duration="332000" />
+      <workItem from="1700705233582" duration="2167000" />
+      <workItem from="1700708734347" duration="350000" />
+      <workItem from="1700709263219" duration="3603000" />
+      <workItem from="1700721488320" duration="100000" />
+      <workItem from="1700722365607" duration="850000" />
+      <workItem from="1700723663769" duration="625000" />
+      <workItem from="1700888748959" duration="742000" />
+      <workItem from="1701486953873" duration="1096000" />
+      <workItem from="1702088991968" duration="79000" />
+      <workItem from="1702092873465" duration="158000" />
+      <workItem from="1702093179148" duration="829000" />
+      <workItem from="1702094965317" duration="577000" />
+      <workItem from="1702096871067" duration="277000" />
+      <workItem from="1702097272307" duration="54000" />
+      <workItem from="1702097517464" duration="102000" />
+      <workItem from="1702097718774" duration="144000" />
+      <workItem from="1704902627065" duration="41000" />
+      <workItem from="1704904186716" duration="947000" />
+      <workItem from="1706877219005" duration="43000" />
+      <workItem from="1706877622456" duration="848000" />
+      <workItem from="1706879655201" duration="177000" />
+      <workItem from="1706880337995" duration="17000" />
+      <workItem from="1706880384771" duration="23000" />
+      <workItem from="1706888213720" duration="1734000" />
+      <workItem from="1706889999887" duration="1247000" />
+      <workItem from="1706926958039" duration="801000" />
+      <workItem from="1706942817971" duration="48000" />
+      <workItem from="1706950799460" duration="259000" />
+      <workItem from="1706965934697" duration="600000" />
+      <workItem from="1707017952970" duration="1098000" />
+      <workItem from="1707070819989" duration="546000" />
+      <workItem from="1707119434966" duration="9446000" />
+      <workItem from="1707142304740" duration="7000" />
+      <workItem from="1707216968263" duration="3778000" />
+      <workItem from="1707446797696" duration="12000" />
+      <workItem from="1710395102798" duration="2344000" />
+      <workItem from="1710472618721" duration="202000" />
+      <workItem from="1710818108063" duration="1997000" />
+      <workItem from="1710821208935" duration="170000" />
+      <workItem from="1711734164823" duration="603000" />
+      <workItem from="1714747023555" duration="5000" />
+      <workItem from="1714747277352" duration="840000" />
+      <workItem from="1715013967737" duration="4000" />
+      <workItem from="1715316755016" duration="146000" />
+      <workItem from="1715318094675" duration="180000" />
+      <workItem from="1715435411234" duration="44000" />
+      <workItem from="1715435890939" duration="260000" />
+      <workItem from="1715437210342" duration="41000" />
+      <workItem from="1715439648579" duration="15000" />
+      <workItem from="1719030498335" duration="30000" />
+      <workItem from="1719031032289" duration="112000" />
+      <workItem from="1719031661414" duration="481000" />
+      <workItem from="1719032796668" duration="83000" />
+      <workItem from="1719581414407" duration="531000" />
+      <workItem from="1719587104708" duration="28000" />
+      <workItem from="1719832818962" duration="8561000" />
+      <workItem from="1719848415284" duration="16000" />
+      <workItem from="1719850463013" duration="713000" />
+      <workItem from="1720188530655" duration="1219000" />
+      <workItem from="1720238799762" duration="599000" />
+      <workItem from="1720242365483" duration="599000" />
+      <workItem from="1720445659433" duration="2217000" />
+      <workItem from="1720615194420" duration="1982000" />
+      <workItem from="1720699245275" duration="4039000" />
     </task>
     <task id="LOCAL-00001" summary="reduced title text size">
       <created>1690386221786</created>
@@ -634,7 +603,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
