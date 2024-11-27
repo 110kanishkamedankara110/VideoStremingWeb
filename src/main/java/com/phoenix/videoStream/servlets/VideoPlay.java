@@ -36,9 +36,10 @@ import java.nio.channels.ReadableByteChannel;
 public class VideoPlay extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String video = getServletContext().getRealPath("") + "/Resources/Videos/" + req.getParameter("video");
+        String video = "videoStream/Resources/Videos/" + req.getParameter("video");
 
         File res = new File(video);
+
 
         long start = 0;
         long end = res.length() - 1;
@@ -54,7 +55,6 @@ public class VideoPlay extends HttpServlet {
             } else {
                 endSt = rangeAr[1];
             }
-            System.out.println(range);
             if (startSt.length() > 0 && !startSt.isEmpty()) {
                 start = Long.parseLong(startSt);
             }
@@ -154,11 +154,16 @@ public class VideoPlay extends HttpServlet {
 
     private String uploadThumbnailFile(Part p) throws Exception {
 
-
-        File res = new File(getServletContext().getRealPath("") + "/Resources");
-        File thumb = new File(getServletContext().getRealPath("") + "/Resources/Thumbnail");
+        File main=new File("videoStream");
+        File res = new File("videoStream/Resources");
+        File thumb = new File("videoStream/Resources/Thumbnail");
         String name = "Resources/Thumbnail/" + System.currentTimeMillis() + ".png";
-        File file = new File(getServletContext().getRealPath("") + "/" + name);
+        File file = new File("videoStream/" + name);
+
+        if(!main.exists()){
+            main.mkdirs();
+        }
+
         if (!res.exists()) {
             res.mkdir();
         }
@@ -172,12 +177,17 @@ public class VideoPlay extends HttpServlet {
     }
 
     private String uploadVideoFile(Part p) throws Exception {
-        File res = new File(getServletContext().getRealPath("") + "/Resources");
-        File thumb = new File(getServletContext().getRealPath("") + "/Resources/Videos");
+        File main=new File("videoStream");
+        File res = new File("videoStream/Resources");
+        File thumb = new File("videoStream/Resources/Videos");
         String ext = p.getSubmittedFileName().substring(p.getSubmittedFileName().length() - 3, p.getSubmittedFileName().length());
 
         String name = System.currentTimeMillis() + "." + (ext);
-        File file = new File(getServletContext().getRealPath("") + "/Resources/Videos/" + name);
+        File file = new File("videoStream/Resources/Videos/" + name);
+
+        if(!main.exists()){
+            main.mkdirs();
+        }
         if (!res.exists()) {
             res.mkdir();
         }
@@ -191,9 +201,15 @@ public class VideoPlay extends HttpServlet {
     }
 
     private String uploadThumbnailFile(String link) throws Exception {
-        File res = new File(getServletContext().getRealPath("") + "/Resources");
-        File thumb = new File(getServletContext().getRealPath("") + "/Resources/Thumbnail");
-        String name = "Resources/Thumbnail/" + System.currentTimeMillis() + ".png";
+        File main=new File("videoStream");
+
+        File res = new File( "videoStream/Resources");
+        File thumb = new File("videoStream/Resources/Thumbnail");
+        String name = "" + System.currentTimeMillis() + ".png";
+
+        if(!main.exists()){
+            main.mkdirs();
+        }
         if (!res.exists()) {
             res.mkdir();
         }
@@ -201,7 +217,9 @@ public class VideoPlay extends HttpServlet {
             thumb.mkdir();
         }
 
-        FFmpegFrameGrabber g = new FFmpegFrameGrabber(getServletContext().getRealPath("") + "/Resources/Videos/" + link);
+        File f=new File("videoStream/Resources/Videos/"+link);
+
+        FFmpegFrameGrabber g = new FFmpegFrameGrabber(f.getAbsolutePath());
         g.start();
 
         Java2DFrameConverter converter = new Java2DFrameConverter();
@@ -232,7 +250,7 @@ public class VideoPlay extends HttpServlet {
             if (black >= ((pix / 3) * 2)) {
 
             } else {
-                ImageIO.write(bi, "png", new File(getServletContext().getRealPath("") + "/" + name));
+                ImageIO.write(bi, "png", new File( "videoStream/Resources/Thumbnail/" + name));
                 break;
             }
             if (i == j - 1) {

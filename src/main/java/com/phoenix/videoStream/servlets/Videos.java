@@ -39,7 +39,6 @@ public class Videos extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println(getServletContext().getRealPath(""));
         SessionFactory sf = HibernateUtil.getSessionFactory();
         Session s = sf.openSession();
         Query q = null;
@@ -74,9 +73,10 @@ public class Videos extends HttpServlet {
             String description = video.getDescription();
             String title = video.getTitle();
             User user = video.getUser();
-            String path = getServletContext().getRealPath("") + "/" + thumbnail;
+            String path =   "videoStream/Resources/Thumbnail/" + thumbnail;
 
             File f = new File(path);
+
             BufferedImage bi = ImageIO.read(f);
             Map colors = new HashMap();
             for (int y = 0; y < bi.getHeight(); y = y + 10) {
@@ -107,7 +107,7 @@ public class Videos extends HttpServlet {
             String color = (getRandomColor(colors));
             String minCol = getInverseColor(color);
             Map m = new HashMap();
-            m.put("thumbnail", thumbnail);
+            m.put("thumbnail", "thumbnail?thumbnail="+thumbnail);
             m.put("video", vid);
             m.put("title", title);
             m.put("description", description);
@@ -126,7 +126,7 @@ public class Videos extends HttpServlet {
 
         s.close();
 
-
+        Collections.shuffle(data);
 
         resp.setContentType("application/json");
         resp.setStatus(HttpServletResponse.SC_OK);
