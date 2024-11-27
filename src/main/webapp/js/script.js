@@ -173,6 +173,49 @@ var intv;
 var click = false
 var prev = "";
 
+
+function loadFromLocalStorage() {
+    const data = localStorage.getItem("appState");
+    if (data) {
+        const savedState = JSON.parse(data);
+        stat = savedState.stat;
+        int = savedState.int;
+        t = savedState.t;
+        vp = savedState.vp;
+        playtimes = savedState.playtimes;
+        play = savedState.play;
+        vol = savedState.vol;
+        intv = savedState.intv;
+        click = savedState.click;
+        prev = savedState.prev;
+    }
+}
+
+window.addEventListener("load", loadFromLocalStorage);
+
+function saveToLocalStorage() {
+    const data = {
+        stat,
+        int,
+        t,
+        vp,
+        playtimes,
+        play,
+        vol,
+        intv,
+        click,
+        prev
+    };
+
+    localStorage.setItem("appState", JSON.stringify(data));
+    console.log("State saved to localStorage.");
+}
+
+window.addEventListener("beforeunload", saveToLocalStorage);
+window.addEventListener('', saveToLocalStorage);
+
+
+
 function mouseOver(id) {
     var vid = searchObject(id).video;
     var ele = document.getElementById("vid" + id);
@@ -231,6 +274,7 @@ function mouseOut(id) {
     play = false;
     clearInterval(int);
     t = 0;
+    saveToLocalStorage();
 }
 
 function setHistory(x) {
@@ -256,6 +300,7 @@ function setHistory(x) {
 }
 
 function playvid(x) {
+    saveToLocalStorage();
     if (prev != "") {
         playtimes[prev] = vp.currentTime;
     }
@@ -385,6 +430,7 @@ function update(id) {
 }
 
 function closePlayer(x) {
+    saveToLocalStorage();
     prev = "";
     var object = searchObject(x);
 
