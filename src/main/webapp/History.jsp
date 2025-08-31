@@ -47,10 +47,11 @@
 </head>
 <body onload="loadHistory()">
 <div style="visibility: hidden;position: absolute" class="fd" id="fakeDiv"></div>
-
+<div>
+    <h1 style="text-align: center">History</h1>
 <div class="main-div" id="main-div">
 </div>
-
+</div>
 <div class="moreBut" onclick="showMenu()">
     <b><p>More</p></b>
 </div>

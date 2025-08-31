@@ -14,7 +14,7 @@ import java.io.OutputStream;
 public class Thumbnail extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String thumbnail = "videoStream/Resources/Thumbnail/" + req.getParameter("thumbnail");
+        String thumbnail = "/videoStream/Resources/Thumbnail/" + req.getParameter("thumbnail");
 
         resp.setContentType("image/jpeg");
 

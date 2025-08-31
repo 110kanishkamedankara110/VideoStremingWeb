@@ -75,7 +75,7 @@ function loadComponents() {
 
 
         div3.className = "tit";
-        div3.innerHTML = obj.title;
+        div3.innerHTML =obj.title.replaceAll('_'," ");
         div3.style.backgroundColor = "black";
         div3.style.color = "white";
 
@@ -355,7 +355,7 @@ function playvid(x) {
     }
 
     document.getElementById("vidimg").src = object.thumbnail;
-    document.getElementById("title1").innerHTML = object.title;
+    document.getElementById("title1").innerHTML = object.title.replaceAll('_',' ');
     document.getElementById("user").innerHTML = object.userEmail;
     document.getElementById("title2").innerHTML = "<b>Playing</b>";
     document.getElementById("description").innerHTML = object.description;

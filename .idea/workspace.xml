@@ -9,9 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f55c53ae-893a-4aaf-8257-c79f7600352a" name="Changes" comment="small ui changes">
+    <list default="true" id="f55c53ae-893a-4aaf-8257-c79f7600352a" name="Changes" comment="SaveHistoryToLocalStorage">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-connector-j-8.0.33.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phoenix/videoStream/servlets/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phoenix/videoStream/servlets/History.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phoenix/videoStream/servlets/Thumbnail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phoenix/videoStream/servlets/Thumbnail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phoenix/videoStream/servlets/VideoPlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phoenix/videoStream/servlets/VideoPlay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phoenix/videoStream/servlets/Videos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phoenix/videoStream/servlets/Videos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/History.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/History.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/MyVideos.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/MyVideos.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/styleSheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/styleSheets/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +36,7 @@
         <option value="AnnotationType" />
         <option value="Jsp File" />
         <option value="Class" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -43,18 +54,20 @@
     &quot;state&quot;: &quot;OPEN&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="828aa595-4d45-432a-9edd-f2bc15ac2be8" />
-        <option name="url" value="https://github.com/110kanishkamedankara110/VideoStremingWeb.git" />
-      </UrlAndAccount>
-    </option>
-  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/110kanishkamedankara110/VideoStremingWeb.git&quot;,
+    &quot;accountId&quot;: &quot;4a7065f0-8901-47d9-9ec1-2ac0f6984df7&quot;
+  }
+}</component>
   <component name="JsBowerSettings">
     <bower-package value="" />
     <bower.json value="" />
   </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -72,7 +85,6 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2SaXYzjIrgPgRzm91SMgykBe89D" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -83,11 +95,13 @@
     &quot;Application.Test.executor&quot;: &quot;Run&quot;,
     &quot;GlassFish Server.GlassFish 4.1.1.executor&quot;: &quot;Run&quot;,
     &quot;Maven.VideoStremingWebApp [clean,validate...].executor&quot;: &quot;Run&quot;,
+    &quot;Payara Server.Payara 4.1.2.executor&quot;: &quot;Run&quot;,
     &quot;Payara Server.Payara 5.2022.2.executor&quot;: &quot;Run&quot;,
     &quot;Payara Server.Payara 5.2022.5.executor&quot;: &quot;Run&quot;,
     &quot;Payara Server.Payara 6.8.0.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
@@ -102,7 +116,7 @@
     &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.34712642&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
@@ -112,11 +126,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\BLACKBOX\IdeaProjects\VideoStremingWeb" />
       <recent name="C:\Users\BLACKBOX\IdeaProjects\VideoStremingWeb\src\main\webapp" />
       <recent name="C:\Users\Kanishka\IdeaProjects\VideoStremingWeb\src\main\webapp" />
       <recent name="C:\Users\Kanishka\IdeaProjects\VideoStremingWeb\src\main\webapp\styleSheets" />
       <recent name="C:\Users\Kanishka\IdeaProjects\VideoStremingWeb\src\main\webapp\js" />
-      <recent name="C:\Users\Kanishka\IdeaProjects\VideoStremingWeb\src\main\resources\libs\ffmpg" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Kanishka\IdeaProjects\VideoStremingWeb\src\main\java\com\phoenix\videoStream" />
@@ -198,25 +212,12 @@
         </option>
       </method>
     </configuration>
-    <configuration default="true" type="PayaraServerConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment />
-      <server-settings>
-        <option name="DOMAIN_NAME" value="domain1" />
-        <option name="PRESERVE" value="false" />
-        <option name="COMPATIBILITY" value="false" />
-        <option name="VIRTUAL_SERVER" />
-        <option name="USERNAME" value="admin" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="GlassFish" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-1.8.0_402-corretto-1.8.0_402-4caba194b151-ae57be32" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26927.53" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.26927.53" />
       </set>
     </attachedChunks>
   </component>
@@ -407,6 +408,31 @@
       <workItem from="1720445659433" duration="2217000" />
       <workItem from="1720615194420" duration="1982000" />
       <workItem from="1720699245275" duration="4313000" />
+      <workItem from="1732764910959" duration="14000" />
+      <workItem from="1732780491952" duration="2437000" />
+      <workItem from="1732853081615" duration="2000" />
+      <workItem from="1732853092201" duration="16000" />
+      <workItem from="1732853347634" duration="4000" />
+      <workItem from="1733932681301" duration="89000" />
+      <workItem from="1736233690342" duration="2447000" />
+      <workItem from="1736345883134" duration="3000" />
+      <workItem from="1737533670489" duration="4612000" />
+      <workItem from="1737539134924" duration="5000" />
+      <workItem from="1737541258517" duration="2993000" />
+      <workItem from="1737593963631" duration="5000" />
+      <workItem from="1737626676431" duration="2789000" />
+      <workItem from="1737677523961" duration="782000" />
+      <workItem from="1738053777819" duration="1217000" />
+      <workItem from="1738110374619" duration="62000" />
+      <workItem from="1743120429299" duration="550000" />
+      <workItem from="1752987110357" duration="3101000" />
+      <workItem from="1753973989311" duration="58000" />
+      <workItem from="1756127530859" duration="672000" />
+      <workItem from="1756309323882" duration="5221000" />
+      <workItem from="1756387983600" duration="106000" />
+      <workItem from="1756431167706" duration="1455000" />
+      <workItem from="1756470689083" duration="9725000" />
+      <workItem from="1756549862969" duration="70000" />
     </task>
     <task id="LOCAL-00001" summary="reduced title text size">
       <created>1690386221786</created>
@@ -595,7 +621,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732715333890</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="SaveHistoryToLocalStorage">
+      <option name="closed" value="true" />
+      <created>1732716671771</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1732716671771</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -636,7 +670,8 @@
     <MESSAGE value="Made colors dynamic and added more information to json" />
     <MESSAGE value="User Registraction and history added" />
     <MESSAGE value="small ui changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="small ui changes" />
+    <MESSAGE value="SaveHistoryToLocalStorage" />
+    <option name="LAST_COMMIT_MESSAGE" value="SaveHistoryToLocalStorage" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

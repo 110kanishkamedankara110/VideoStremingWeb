@@ -50,15 +50,22 @@
 <body onload="loadMyVideos(${userId})">
 <div style="visibility: hidden;position: absolute" class="fd" id="fakeDiv"></div>
 
+<div>
+<h1 style="text-align: center">My Videos</h1>
 <div class="main-div" id="main-div">
 </div>
-
+</div>
 <div class="moreBut" onclick="showMenu()">
     <b><p>More</p></b>
 </div>
+
+
+
 <div style="display: none" id="moreMenu" class="moreMenu">
     ${content}
 </div>
+
+
 <div class="player-div" id="player">
 
     <div class="player" id="pl">

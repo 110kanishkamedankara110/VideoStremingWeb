@@ -36,7 +36,7 @@ import java.nio.channels.ReadableByteChannel;
 public class VideoPlay extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String video = "videoStream/Resources/Videos/" + req.getParameter("video");
+        String video = "/videoStream/Resources/Videos/" + req.getParameter("video");
 
         File res = new File(video);
 
@@ -154,11 +154,11 @@ public class VideoPlay extends HttpServlet {
 
     private String uploadThumbnailFile(Part p) throws Exception {
 
-        File main=new File("videoStream");
-        File res = new File("videoStream/Resources");
-        File thumb = new File("videoStream/Resources/Thumbnail");
+        File main=new File("/videoStream");
+        File res = new File("/videoStream/Resources");
+        File thumb = new File("/videoStream/Resources/Thumbnail");
         String name = "Resources/Thumbnail/" + System.currentTimeMillis() + ".png";
-        File file = new File("videoStream/" + name);
+        File file = new File("/videoStream/" + name);
 
         if(!main.exists()){
             main.mkdirs();
@@ -177,13 +177,13 @@ public class VideoPlay extends HttpServlet {
     }
 
     private String uploadVideoFile(Part p) throws Exception {
-        File main=new File("videoStream");
-        File res = new File("videoStream/Resources");
-        File thumb = new File("videoStream/Resources/Videos");
+        File main=new File("/videoStream");
+        File res = new File("/videoStream/Resources");
+        File thumb = new File("/videoStream/Resources/Videos");
         String ext = p.getSubmittedFileName().substring(p.getSubmittedFileName().length() - 3, p.getSubmittedFileName().length());
 
         String name = System.currentTimeMillis() + "." + (ext);
-        File file = new File("videoStream/Resources/Videos/" + name);
+        File file = new File("/videoStream/Resources/Videos/" + name);
 
         if(!main.exists()){
             main.mkdirs();
@@ -201,10 +201,10 @@ public class VideoPlay extends HttpServlet {
     }
 
     private String uploadThumbnailFile(String link) throws Exception {
-        File main=new File("videoStream");
+        File main=new File("/videoStream");
 
-        File res = new File( "videoStream/Resources");
-        File thumb = new File("videoStream/Resources/Thumbnail");
+        File res = new File( "/videoStream/Resources");
+        File thumb = new File("/videoStream/Resources/Thumbnail");
         String name = "" + System.currentTimeMillis() + ".png";
 
         if(!main.exists()){
@@ -217,7 +217,7 @@ public class VideoPlay extends HttpServlet {
             thumb.mkdir();
         }
 
-        File f=new File("videoStream/Resources/Videos/"+link);
+        File f=new File("/videoStream/Resources/Videos/"+link);
 
         FFmpegFrameGrabber g = new FFmpegFrameGrabber(f.getAbsolutePath());
         g.start();
@@ -250,7 +250,7 @@ public class VideoPlay extends HttpServlet {
             if (black >= ((pix / 3) * 2)) {
 
             } else {
-                ImageIO.write(bi, "png", new File( "videoStream/Resources/Thumbnail/" + name));
+                ImageIO.write(bi, "png", new File( "/videoStream/Resources/Thumbnail/" + name));
                 break;
             }
             if (i == j - 1) {

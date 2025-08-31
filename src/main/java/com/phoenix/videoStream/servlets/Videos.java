@@ -73,7 +73,7 @@ public class Videos extends HttpServlet {
             String description = video.getDescription();
             String title = video.getTitle();
             User user = video.getUser();
-            String path =   "videoStream/Resources/Thumbnail/" + thumbnail;
+            String path =   "/videoStream/Resources/Thumbnail/" + thumbnail;
 
             File f = new File(path);
 
@@ -104,7 +104,8 @@ public class Videos extends HttpServlet {
             }
 
 //                colors.remove(getMax(colors));
-            String color = (getRandomColor(colors));
+//            String color = (getRandomColor(colors));
+            String color=getMax(colors);
             String minCol = getInverseColor(color);
             Map m = new HashMap();
             m.put("thumbnail", "thumbnail?thumbnail="+thumbnail);
@@ -116,7 +117,9 @@ public class Videos extends HttpServlet {
             m.put("color", color);
             m.put("id", id);
             m.put("minColor", minCol);
+            assert user != null;
             m.put("userEmail", user.getEmail());
+
             m.put("userName", user.getFirstName()+" "+user.getLastName());
             m.put("userType", user.getUserType().getUserType());
 

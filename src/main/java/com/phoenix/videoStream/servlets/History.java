@@ -61,7 +61,6 @@ public class History extends HttpServlet {
         Query<com.phoenix.videoStream.entities.History>  q = s.createQuery("SELECT h FROM History h WHERE (h.user.id=:kw) ORDER BY h.updatedAt DESC");
         q.setParameter("kw", ((User)req.getSession().getAttribute("user")).getId());
 
-
         List<com.phoenix.videoStream.entities.History> histories = q.getResultList();
 
 
@@ -74,7 +73,7 @@ public class History extends HttpServlet {
             String description = history.getVideo().getDescription();
             String title = history.getVideo().getTitle();
             User user = history.getVideo().getUser();
-            String path = getServletContext().getRealPath("") + "/" + thumbnail;
+            String path =  "/videoStream/Resources/Thumbnail/" + thumbnail;
 
             File f = new File(path);
             BufferedImage bi = ImageIO.read(f);
@@ -107,7 +106,7 @@ public class History extends HttpServlet {
             String color = (getMax(colors));
             String minCol = (getMin(colors));
             Map m = new HashMap();
-            m.put("thumbnail", thumbnail);
+            m.put("thumbnail", "thumbnail?thumbnail="+thumbnail);
             m.put("video", vid);
             m.put("title", title);
             m.put("description", description);
@@ -166,5 +165,7 @@ public class History extends HttpServlet {
         return minColor;
 
     }
+
+
 
 }
