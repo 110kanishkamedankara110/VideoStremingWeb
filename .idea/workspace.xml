@@ -11,11 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f55c53ae-893a-4aaf-8257-c79f7600352a" name="Changes" comment="SaveHistoryToLocalStorage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phoenix/videoStream/servlets/Signin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phoenix/videoStream/servlets/Signin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phoenix/videoStream/servlets/Update.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phoenix/videoStream/servlets/Update.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phoenix/videoStream/servlets/VideoPlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phoenix/videoStream/servlets/VideoPlay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/History.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/History.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phoenix/videoStream/middleware/IsAuthenticated.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phoenix/videoStream/middleware/IsAuthenticated.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/styleSheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/styleSheets/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -427,7 +424,7 @@
       <workItem from="1756431167706" duration="1455000" />
       <workItem from="1756470689083" duration="9725000" />
       <workItem from="1756549862969" duration="70000" />
-      <workItem from="1756622368249" duration="7525000" />
+      <workItem from="1756622368249" duration="14524000" />
     </task>
     <task id="LOCAL-00001" summary="reduced title text size">
       <created>1690386221786</created>
@@ -632,7 +629,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756622427721</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="SaveHistoryToLocalStorage">
+      <option name="closed" value="true" />
+      <created>1756629957778</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1756629957778</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

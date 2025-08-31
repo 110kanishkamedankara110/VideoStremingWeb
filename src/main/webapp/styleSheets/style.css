@@ -314,11 +314,7 @@ body {
 }
 
 @media (max-width: 600px) {
-    .vid-mor {
-        flex-direction: column;
-        transition: 2s;
-        overflow-y: auto;
-    }
+
 
     :root {
         --val: 160px;
