@@ -39,9 +39,7 @@ public class Signin extends HttpServlet {
         UserType userType = userTypeQuery.getSingleResult();
 
         HashMap<String, String> massage = new HashMap();
-        if (u.size()>=1) {
-            massage.put("title", "User Already Registered");
-        } else if (user.getLastName().isEmpty()) {
+         if (user.getFirstName().isEmpty()) {
             massage.put("title", "Enter First Name");
         } else if (user.getLastName().isEmpty()) {
             massage.put("title", "Enter Last Name");
@@ -49,7 +47,9 @@ public class Signin extends HttpServlet {
         } else if (user.getEmail().isEmpty()) {
             massage.put("title", "Enter Email");
 
-        } else {
+        }else if (u.size()>=1) {
+            massage.put("title", "User Already Registered");
+        }  else {
             String password = Encrypt.encrypt(user.getPassword());
             user.setPassword(password);
             user.setUserType(userType);

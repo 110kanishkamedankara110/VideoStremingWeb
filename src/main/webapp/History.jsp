@@ -69,18 +69,15 @@
         <div class="vid-mor">
             <div class="vp">
                 <video id="play_vid" class="vidPlay"></video>
-                <textarea type="text" style="padding: 10px;box-sizing: border-box" id="title1"></textarea>
+                <h3 style="padding: 10px;box-sizing: border-box" id="title1"></h3>
                 <p style="box-sizing: border-box" id="user"></p>
-                <button id="del">Delete</button>
-                <textarea class="desc" id="description">
+                <div class="desc" id="description">
 
-                </textarea>
-                <button id="upd">Update</button>
+                </div>
             </div>
             <div class="more">
                 <div id="cur" class="current">
-                    <img class="img" id="vidimg"/>
-                    <input type="file"  accept="image/*"  id="updIcon" />
+                    <div class="img" id="vidimg" ></div>
                     <span  style="padding: 10px;box-sizing: border-box;width: 70%;overflow-y: auto;font-size: smaller;color: white;display:none"
                            id="title2"></span>
                 </div>

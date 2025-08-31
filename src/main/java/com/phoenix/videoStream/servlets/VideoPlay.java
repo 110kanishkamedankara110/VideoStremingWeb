@@ -157,8 +157,9 @@ public class VideoPlay extends HttpServlet {
         File main=new File("/videoStream");
         File res = new File("/videoStream/Resources");
         File thumb = new File("/videoStream/Resources/Thumbnail");
-        String name = "Resources/Thumbnail/" + System.currentTimeMillis() + ".png";
-        File file = new File("/videoStream/" + name);
+
+        String name = "" + System.currentTimeMillis() + ".png";
+        File file = new File("/videoStream/Resources/Thumbnail/" + name);
 
         if(!main.exists()){
             main.mkdirs();
@@ -173,7 +174,7 @@ public class VideoPlay extends HttpServlet {
 
         file.createNewFile();
 
-        return upload(p, file, name);
+        return uploadImg(p, file, name);
     }
 
     private String uploadVideoFile(Part p) throws Exception {
@@ -265,6 +266,24 @@ public class VideoPlay extends HttpServlet {
 
 
     private String upload(Part p, File file, String name) throws Exception {
+        InputStream is = p.getInputStream();
+
+        FileOutputStream fos = new FileOutputStream(file);
+
+        ReadableByteChannel rbc = Channels.newChannel(is);
+        FileChannel fc = fos.getChannel();
+        fc.transferFrom(rbc, 0, Long.MAX_VALUE);
+
+
+        is.close();
+        fos.close();
+        fc.close();
+        rbc.close();
+
+        return name;
+    }
+
+    private String uploadImg(Part p, File file, String name) throws Exception {
         InputStream is = p.getInputStream();
 
         FileOutputStream fos = new FileOutputStream(file);

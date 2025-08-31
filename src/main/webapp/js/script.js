@@ -392,42 +392,38 @@ function delet(id) {
 }
 
 function update(id) {
-    let title = document.getElementById("title1");
-    let description = document.getElementById("description");
+    let title = document.getElementById("title1").value;
+    let description = document.getElementById("description").value;
     let image = document.getElementById("updIcon").files[0];
-    let formData = new FormData();
 
-    if (image != null) {
+    if(!title) { alert("Title Required"); return; }
+    if(!description) { alert("Description Required"); return; }
+
+    let formData = new FormData();
+    formData.append("data", JSON.stringify({ title, description, id }));
+
+    if(image) {
         formData.append("image", image);
     }
-    fetch(
-        "Update",
-        {
-            method: 'POST',
-            headers: {
-                'content-Type': 'application/x-www-form-urlencoded',
-            },
-            body: "data=" + JSON.stringify({
-                title: title.value,
-                description: description.value,
-                id: id,
-            })
-        }
-    )
-        .then(
-            (resp) => {
-                return resp.json();
+
+    fetch("Update", {
+        method: "POST",
+        body: formData // ✅ do not set Content-Type manually
+    })
+        .then(resp => resp.json())
+        .then(json => {
+            if(json.status === "success") {
+                window.location = "MyVideos.jsp";
+            } else {
+                alert(json.message);
             }
-        ).then(
-        (json) => {
-            (json.title == "Sucess") ? window.location = "MyVideos.jsp" : alert(json.title);
-        }
-    )
-
-        .catch(
-
-        )
+        })
+        .catch(err => {
+            console.error(err);
+            alert("Something went wrong.");
+        });
 }
+
 
 function closePlayer(x) {
     saveToLocalStorage();
